@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    height: 100%;
 }
 
 /* Navbar */
@@ -31,7 +32,16 @@ body {
     width: auto;
     height: 50px;
     margin-right: 10px;
+    transition: transform 0.2s ease-in-out; /* Efek hover yang halus */
+    cursor: pointer;
 }
+
+.navbar-logo:hover{
+    transform:  translateY(-10px);
+    cursor: pointer;
+}
+
+
 
 .navbar-search input {
     padding: 10px;
@@ -51,12 +61,17 @@ body {
 .nav-link {
     text-decoration: none;
     color: white;
-    transition: color 0.3s;
+    transition: transform 0.2s ease-in-out; /* Efek hover yang halus */
+    cursor: pointer;
+    position: relative;
 }
 
-.nav-link:hover {
-    color: #000000;
+.nav-link:hover{
+    transform: translateY(-10px);
 }
+
+
+
 
 .nav-icon {
     height: 30px;
@@ -188,9 +203,8 @@ body {
 .pic img {
     max-width: 100%;
     height: auto;
+    transition: transform 0.2s; /* Efek hover yang halus */
 }
-
-
 
 .services-item {
     max-width: 1200px;
@@ -213,7 +227,15 @@ body {
     max-width: 300px;   
     width: 40%;
     margin-right: 20px;
+    transition: transform 0.2s ease-in-out; /* Efek hover yang halus */
+    cursor: pointer;
 }
+
+/* Pastikan tidak ada spasi antara class dan :hover */
+.services-img:hover {
+    transform: scale(1.5); /* Memperbesar elemen saat di-hover */
+}
+
 
 .text {
     font-size: 1.1rem;
@@ -267,6 +289,7 @@ body {
     transition: transform 0.3s ease;
     margin: 0;
     padding: 0;
+    cursor: pointer;
 }
 
 .card img {
@@ -307,15 +330,7 @@ body {
     margin: 10px 0;
 }
 
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #f8f9fa;
-    color: #007BFF;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
+
 
 .button:hover {
     background-color: #e2e6ea;
@@ -323,6 +338,7 @@ body {
 
 .card:hover {
     transform: translateY(-10px);
+    cursor: pointer;
 }
 
 
@@ -362,9 +378,13 @@ body {
 
 .testimoni-home {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Memusatkan konten secara horizontal */
 }
 
 .testimoni-txt h1 {
+    font-size: 96px;
     text-align: center;
     margin-bottom: 20px;
     color: #333;
@@ -372,21 +392,28 @@ body {
 
 .testimoni-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Membuat dua kolom dengan ukuran sama */
-    gap: 20px; /* Menambahkan jarak yang sesuai antara kolom dan baris */
-    justify-items: center; /* Memusatkan kartu secara horizontal di setiap kolom */
+    grid-template-columns: repeat(2, 1fr); /* Dua kolom dengan ukuran sama */
+    gap: 20px; /* Jarak antar kolom dan baris */
+    justify-items: center; /* Memusatkan kartu secara horizontal */
+    max-width: 1200px; /* Mengatur lebar maksimum kontainer */
+    width: 100%; /* Mengambil penuh lebar kontainer */
 }
 
 .profile-card {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     background-color: #007BFF;
     color: white;
     border-radius: 10px;
     padding: 20px;
     width: 100%; /* Mengambil penuh lebar kolom */
     box-sizing: border-box; /* Pastikan padding tidak menambah lebar elemen */
+    height: 197px;
+    transition: transform 0.2s; /* Efek hover yang halus */
+}
+
+.profile-card:hover {
+    transform: scale(1.05); /* Zoom sedikit saat hover */
 }
 
 .profile-img {
@@ -416,3 +443,131 @@ body {
     font-size: 0.9em;
 }
 
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .testimoni-container {
+        grid-template-columns: 1fr; /* Satu kolom pada layar kecil */
+    }
+}
+
+
+
+.footer {
+    background-color: #007BFF; /* Warna latar belakang */
+    color: white;
+    padding: 20px 0;
+    width: auto;
+ 
+    height: 100%;
+    margin-top: 100px;
+}
+
+.footer-content {
+    max-width: 12000px; /* Lebar maksimum konten */
+    margin: 0 auto; /* Memusatkan konten */
+    margin-left: 20px;
+    display: flex; /* Menggunakan flexbox */
+
+    align-items: center; /* Memastikan elemen terpusat secara vertikal */
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column; /* Mengatur elemen secara vertikal */
+    align-items: flex-start; /* Semua elemen diratakan ke kiri */
+    text-align: left; /* Menyelaraskan teks ke kiri */
+}
+
+.footer-logo {
+    width: 150px; /* Sesuaikan lebar logo */
+    margin-right: 10px; /* Jarak di sebelah kanan logo */
+}
+
+.footer-social {
+    display: flex; /* Menyusun ikon sosial dalam baris */
+    margin-left: 10px; /* Jarak antara teks dan ikon sosial */
+}
+
+.social-icon {
+    width: 25px; /* Ukuran ikon sosial */
+    margin: 0 5px; /* Jarak antar ikon */
+}
+
+.footer-center {
+
+    text-align: center; /* Memastikan teks di tengah */
+    padding-left: 20px; /* Menambahkan padding kiri */
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto  ;
+    max-width: fit-content;
+    justify-content: center;
+}
+
+.footer-nav {
+    display: flex; /* Menggunakan flexbox untuk tautan */
+    justify-content: center; /* Memusatkan tautan */
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.footer-nav a {
+    margin: 0 10px; /* Jarak antar tautan */
+    text-decoration: none;
+    color: white; /* Warna link */
+    font-weight: bold;
+}
+.footer-credit {
+    margin-top: 10px;
+    font-size: 0.9em; /* Ukuran teks kredit */
+    color: white;
+}
+
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Mengubah arah menjadi kolom pada layar kecil */
+        align-items: center; /* Memusatkan semua elemen */
+    }
+
+    .footer-nav a {
+        display: block; /* Tampilan blok pada layar kecil */
+        margin: 5px 0;
+    }
+}
+
+
+.pic img:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.porto-img :hover{
+    transform: scale(0.5);
+    cursor: pointer;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+
+    transition: transform 0.2s; /* Efek hover yang halus */
+}
+
+.button :hover{
+    background-color: #007BFF;
+    color: white;
+    transform: scale(0.5);
+}
+
+.navbar-logo :hover{
+    transform: scale(1);
+    cursor: pointer;
+}
