@@ -188,41 +188,68 @@ body {
 
 
 .services-item {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    background-color: #f9f9f9;
-}
-
-.services-txt{
-    margin-left: 100px;
-    margin-top: 100px;
 }
 
 .services-txt h1 {
-    font-size: 2.5rem; /* Mengatur ukuran teks judul */
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-
+    font-size: 4rem;
+    margin-bottom: 25px;
 }
 
-.text-image-wrapper {
-    display: flex; /* Menggunakan Flexbox untuk tata letak horizontal */
-    align-items: center; /* Memastikan gambar dan teks sejajar secara vertikal */
-    justify-content: space-between; /* Mengatur spasi antara gambar dan teks */
-    gap: 20px; /* Memberi jarak antara teks dan gambar */
+.text-image-wrapper, .text-image-wrapper-reverse {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .services-img {
-    max-width: 40%; /* Mengatur lebar maksimum gambar menjadi 40% dari kontainer */
-    height: auto; /* Membuat gambar responsif */
+    max-width: 300px;   
+    width: 40%;
+    margin-right: 20px;
 }
 
 .text {
-    flex: 1; /* Membuat teks mengambil sisa ruang yang tersedia */
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.5;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    width: 55%;
 }
+
+.text-image-wrapper-reverse .services-img {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+
+
+.text-image-wrapper p {
+    margin-top: -55px;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.text-image-wrapper-reverse p{
+    margin-block-end: auto  ;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.porto-txt {
+    /* align-items: center;
+    justify-items: center; */
+    text-align: center;
+    font-size: 4rem;
+}
+
+.porto-container{
+    width: 413px;
+    height: 479px;
+    background-color: #007BFF;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
 
 
 
