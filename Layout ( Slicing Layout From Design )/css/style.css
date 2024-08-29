@@ -6,9 +6,14 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: #007BFF;
-    padding: 15px 20px;
-    color: white;
+    justify-content: space-between; /* Membuat ruang antar elemen */
+    align-items: center; /* Menyelaraskan elemen secara vertikal */
+    background-color: #007BFF; /* Warna biru */
+    padding: 10px 20px; /* Sesuaikan padding sesuai kebutuhan */
+}
+
+.navbar a {
+    margin-left: 20px;
 }
 
 .navbar-container {
@@ -50,7 +55,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #ff6347;
+    color: #000000;
 }
 
 .nav-icon {
@@ -61,7 +66,7 @@ body {
 /* Carousel */
 .carousel {
     position: relative;
-    margin-top: 20px;
+    margin-top: 0px;
     max-width: 100%;
     overflow: hidden;
 }
@@ -235,21 +240,179 @@ body {
     gap: 20px;
 }
 
-.porto-txt {
-    /* align-items: center;
-    justify-items: center; */
+.porto-home {
+    padding: 20px;
     text-align: center;
-    font-size: 4rem;
 }
 
-.porto-container{
-    width: 413px;
-    height: 479px;
+.porto-txt h1 {
+    font-size: 96px;
+    margin-bottom: 20px;
+}
+
+.porto-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.card-content {
     background-color: #007BFF;
-    border-radius: 10px;
-    margin-left: 50px;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    background-color: #007BFF; /* Warna biru */
+    color: white;
+    padding: 20px;
+    gap: 90px;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.card-content p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #e2e6ea;
+}
+
+.card:hover {
+    transform: translateY(-10px);
 }
 
 
 
+/* .testimoni-home{
+    margin-top: 100px;
+}
+
+.testimoni-txt{
+    font-size: 48px;
+    text-align: center;
+    font-weight: 400;
+} */
+
+
+.navbar a:first-child {
+    margin-left: 0; /* Menghapus margin kiri dari elemen pertama */
+}
+
+.navbar a, .navbar .profile-icon {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    padding: 10px;
+}
+
+
+/* .testimoni-container {
+    width: 456px;
+    height: 197px;
+    background-color: #007BFF;
+    margin-left: 100px;
+    border-radius: 10px;
+} */
+
+.testimoni-home {
+    padding: 20px;
+}
+
+.testimoni-txt h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.testimoni-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Membuat dua kolom dengan ukuran sama */
+    gap: 20px; /* Menambahkan jarak yang sesuai antara kolom dan baris */
+    justify-items: center; /* Memusatkan kartu secara horizontal di setiap kolom */
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%; /* Mengambil penuh lebar kolom */
+    box-sizing: border-box; /* Pastikan padding tidak menambah lebar elemen */
+}
+
+.profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.profile-info h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.profile-info p:first-of-type {
+    margin: 5px 0;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.profile-info p {
+    margin: 10px 0 0 0;
+    font-size: 0.9em;
+}
 
