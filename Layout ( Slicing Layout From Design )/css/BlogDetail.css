@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+.container-detail {
+    display: flex;
+    justify-content: center; /* Center the entire layout horizontally */
+    padding: 20px;
+}
+
+.blog-content-detail {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    gap: 40px; /* Increase space between the logo and the blog card container */
+}
+
+.blog-logo {
+    max-width: 350px;
+    margin-top: 250px; /* Adjust the top margin for better alignment */
+}
+
+.blog-card-container {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column; /* Stack blog cards vertically */
+    gap: 20px; /* Space between the blog cards */
+}
+
+.blog-card-detail {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px; /* Fixed width for uniformity */
+}
+
+.blog-card-detail a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.blog-card-detail img {
+    margin-right: 10px;
+}
+
+.view-detailll {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.see-detail, .see-detailll {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+
+
+footer {
+    margin-top: 100px;
+}
+
+
+
+
+.blog-card-detail-sec {
+    background-color: #007bff; /* Warna latar belakang */
+    color: white; /* Warna teks */
+    border-radius: 8px; /* Sudut melengkung */
+    padding: 20px; /* Ruang di dalam kartu */
+    width: 500px; /* Lebar kartu */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Bayangan */
+    margin: 20px 0; /* Jarak antar kartu */
+    position: relative; /* Posisi relatif untuk penataan lebih lanjut */
+}
+
+.blog-left-second {
+    display: flex; /* Menggunakan flexbox */
+}
+
+.profile-img {
+    width: 80px; /* Ukuran gambar */
+    height: 80px; /* Ukuran gambar */
+    margin-right: 15px; /* Jarak kanan untuk gambar */
+    position: absolute; /* Memposisikan gambar secara absolut */
+    top: 20px; /* Jarak dari atas */
+    left: 20px; /* Jarak dari kiri */
+}
+
+.text-content {
+    margin-left: 100px; /* Jarak kiri untuk menghindari gambar */
+    display: flex;
+    flex-direction: column; /* Mengatur teks ke arah vertikal */
+}
+
+.job-title {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 5px 0; /* Jarak antara judul pekerjaan dan deskripsi */
+}
+
+.description {
+    text-align: left;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.date {
+    text-align: left;
+    margin-top: 15px; /* Jarak atas untuk tanggal */
+}
+
+button {
+    background-color: #f8d0e5; /* Warna tombol */
+    color: black; /* Warna teks tombol */
+    border: none; /* Tanpa garis tepi */
+    border-radius: 5px; /* Sudut melengkung tombol */
+    padding: 10px 15px; /* Ruang dalam tombol */
+    cursor: pointer; /* Kursor tangan saat hover */
+    transition: background-color 0.3s; /* Efek transisi */
+}
+
+button:hover {
+    background-color: #f8b5d6; /* Warna saat hover */
+}

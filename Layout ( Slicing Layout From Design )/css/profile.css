@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.profile {
+    display: flex;
+    margin-left: 200px;
+    justify-content: flex-start; /* Center the profile container horizontally */
+    padding: 20px; /* Add some padding around the section */
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Two columns: auto width for the image and flexible width for the text */
+    align-items: center; /* Vertically align items in the center */
+    gap: 20px; /* Space between the image and text */
+    padding: 20px; /* Padding inside the container */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.profile-pro {
+    border-radius: 50%; /* Make the image circular */
+    max-width: 100px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.profile-txt h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Adjust font size as needed */
+}
+
+.profile-txt p {
+    margin: 0; /* Remove default margin */
+    color: black; /* Optional: Change text color */
+}
+
+
+.profile-txt{
+    margin-top: -70px;
+}
+
+
+.profile-chart {
+    padding: 20px;
+}
+
+.chart-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tiga kolom untuk grafik */
+    gap: 20px; /* Jarak antar grafik */
+    justify-items: center; /* Mencetak grafik ke tengah */
+}
+
+.chart {
+    background-color: #007bff; /* Warna latar belakang grafik */
+    padding: 10px; /* Mengurangi padding untuk ukuran lebih kecil */
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+.chart-large {
+    grid-column: span 1; /* Satu kolom */
+    max-width: 80%; /* Mengatur lebar maksimum */
+}
+
+.chart-wide {
+    grid-column: span 3; /* Tiga kolom (seluruh lebar) */
+    max-width: 80%; /* Mengatur lebar maksimum */
+}
+
+.chart-image {
+    padding: 20px;
+    width: 100%; /* Mengatur lebar gambar agar responsif */
+    height: auto; /* Mempertahankan rasio aspek gambar */
+    border-radius: 5px; /* Sudut melengkung pada gambar */
+    margin-top: 10px; /* Jarak atas untuk gambar */
+}
+
+/* Tambahan untuk mengatur jarak khusus antara Pie Chart dan Line Chart */
+.pie-line-container {
+    margin-left: 700px;
+    grid-column: span 2; /* Menggunakan dua kolom */
+    display: flex; /* Menyusun dalam satu baris */
+    gap: 0; /* Tidak ada jarak antara Pie dan Line Chart */
+}
+
+
